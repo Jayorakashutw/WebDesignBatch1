@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML Lists Example</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+        }
+        
+        .custom-list {
+            color: #2c3e50;
+        }
+    </style>
+</head>
+
+<body>
+    <h2>Unordered Lists (ul)</h2>
+    <!-- Basic unordered list -->
+    <ul class="custom-list">
+        <li>Coffee</li>
+        <li>Tea</li>
+        <li>Milk</li>
+        <li>Juice</li>
+    </ul>
+
+    <!-- Unordered list with different bullet styles -->
+    <h3>Different List Styles</h3>
+    <ul style="list-style-type: disc;">
+        <li>Disc style bullets</li>
+        <li>Default style</li>
+    </ul>
+
+    <ul style="list-style-type: circle;">
+        <li>Circle style bullets</li>
+        <li>Hollow circles</li>
+    </ul>
+
+    <ul style="list-style-type: square;">
+        <li>Square style bullets</li>
+        <li>Square markers</li>
+    </ul>
+
+    <h2>Ordered Lists (ol)</h2>
+    <!-- Basic ordered list -->
+    <ol class="custom-list">
+        <li>First item</li>
+        <li>Second item</li>
+        <li>Third item</li>
+        <li>Fourth item</li>
+    </ol>
+
+    <!-- Ordered list with different numbering styles -->
+    <h3>Different Numbering Styles</h3>
+    <ol type="1">
+        <li>Numerical ordering (1, 2, 3)</li>
+        <li>Default style</li>
+    </ol>
+
+    <ol type="A">
+        <li>Uppercase letters (A, B, C)</li>
+        <li>Capital letters</li>
+    </ol>
+
+    <ol type="a">
+        <li>Lowercase letters (a, b, c)</li>
+        <li>Small letters</li>
+    </ol>
+
+    <ol type="I">
+        <li>Uppercase Roman (I, II, III)</li>
+        <li>Capital Roman numerals</li>
+    </ol>
+
+    <ol type="i">
+        <li>Lowercase Roman (i, ii, iii)</li>
+        <li>Small Roman numerals</li>
+    </ol>
+
+    <h2>Nested Lists</h2>
+    <!-- Nested list example -->
+    <ul>
+        <li>Coffee
+            <ul>
+                <li>Black Coffee
+                    <ol>
+                        <li>Espresso</li>
+                        <li>Americano</li>
+                    </ol>
+                </li>
+                <li>Coffee with Milk
+                    <ol>
+                        <li>Latte</li>
+                        <li>Cappuccino</li>
+                    </ol>
+                </li>
+            </ul>
+        </li>
+        <li>Tea
+            <ul>
+                <li>Black Tea</li>
+                <li>Green Tea</li>
+                <li>Herbal Tea</li>
+            </ul>
+        </li>
+    </ul>
+
+    <!-- Description List Example -->
+    <h2>Description Lists (dl)</h2>
+
+    <!-- Basic Description List -->
+    <dl>
+        <dt>HTML</dt>
+        <dd>HyperText Markup Language - The standard markup language for creating web pages.</dd>
+
+        <dt>CSS</dt>
+        <dd>Cascading Style Sheets - A style sheet language used for describing the presentation of a document.</dd>
+
+        <dt>JavaScript</dt>
+        <dd>A programming language that enables interactive web pages.</dd>
+    </dl>
+
+    <!-- Styled Description List -->
+    <h3>Styled Description List</h3>
+    <dl style="margin-left: 20px;">
+        <dt style="font-weight: bold; color: #2c3e50;">Front-end Development</dt>
+        <dd style="margin-bottom: 15px;">The practice of producing HTML, CSS and JavaScript for a website or application.</dd>
+
+        <dt style="font-weight: bold; color: #2c3e50;">Back-end Development</dt>
+        <dd style="margin-bottom: 15px;">The server-side of web development, focusing on databases, scripting, and website architecture.</dd>
+
+        <dt style="font-weight: bold; color: #2c3e50;">Full Stack Development</dt>
+        <dd style="margin-bottom: 15px;">Development of both client-side and server-side of web applications.</dd>
+    </dl>
+</body>
+
+</html>

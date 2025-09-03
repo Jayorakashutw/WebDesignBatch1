@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>My First Webpage</title>
+    <style>
+        body {
+            background-color: lightblue;
+        }
+    </style>
+</head>
+
+<body>
+    <h2>Picture Tag Examples:</h2>
+
+    <!-- Basic picture example with media queries -->
+    <picture>
+        <source media="(min-width: 1024px)" srcset="images/large.jpg">
+        <source media="(min-width: 768px)" srcset="images/medium.jpg">
+        <source media="(min-width: 320px)" srcset="images/small.jpg">
+        <img src="image/6.jpg" alt="Responsive image" style="max-width: 100%;">
+    </picture>
+
+    <!-- Picture with different image formats -->
+    <picture>
+        <source srcset="images/photo.webp" type="image/webp">
+        <source srcset="images/photo.jpg" type="image/jpeg">
+        <img src="images/photo.jpg" alt="Photo with format fallback">
+    </picture>
+
+    <!-- Picture with different image densities -->
+    <picture>
+        <source srcset="images/logo@3x.png 3x, images/logo@2x.png 2x, images/logo@1x.png 1x">
+        <img src="images/logo@1x.png" alt="High-DPI logo">
+    </picture>
+
+    <!-- Picture with art direction -->
+    <picture>
+        <source media="(orientation: landscape)" srcset="image/2.jpg">
+        <source media="(orientation: portrait)" srcset="image/3.jpg">
+        <img src="image/4.jpg" alt="Orientation-specific image">
+    </picture>
+
+    <p>This is my first webpage created with HTML.</p>
+
+    <h1 style="text-align: center;">This is Heading 1</h1>
+    <h2>This is Heading 2</h2>
+    <h3>This is Heading 3</h3>
+    <h4>This is Heading 4</h4>
+    <h5>This is Heading 5</h5>
+    <h6>This is Heading 6</h6>
+
+    <p style="color:#09033d; font-size: 12px; font-weight: bold;">
+        Video provides a powerful way to help you prove your point. When you click Online Video, you can paste in the embed code for the video you want to add. You can also type a keyword to search online for the video that best fits your document. To make your
+    </p>
+
+    <!-- Day 2 Tutorial-->
+    <h2>Text Formatting Examples:</h2>
+
+    <p><b>This is bold text</b></p>
+    <p><strong>This is strong text</strong></p>
+    <p><i>This is italic text</i></p>
+    <p><em>This is emphasized text</em></p>
+    <p><mark>This is marked/highlighted text</mark></p>
+    <p><small>This is smaller text</small></p>
+    <p><del>This is deleted text</del></p>
+    <p><ins>This is inserted text</ins></p>
+    <p>H<sub>2</sub>O and (a+b)<sup>2</sup></p>
+
+    <blockquote>This is a block quotation</blockquote>
+    <q>This is an inline quotation</q>
+    <abbr title="World Health Organization">WHO</abbr>
+    <p><b>Udesha Technology</b></p>
+    <blockquote>Udesha Technology Pvt. Ltd. is a fast-growing software development and IT services company committed to delivering innovative digital solutions for businesses and individuals. With expertise spanning software development, training, e-learning, and
+        enterprise solutions, we empower organizations to embrace technology for growth and efficiency.</blockquote>
+
+    <h2>Contact Information Example:</h2>
+    <address>
+        Written by: John Smith<br>
+        Visit us at:<br>
+        Example.com<br>
+        Box 564, Disneyland<br>
+        USA<br>
+        <br>
+        Contact us at: <a href="mailto:contact@example.com">contact@example.com</a><br>
+        Phone: <a href="tel:+1234567890">123-456-7890</a>
+    </address>
+    <!-- Day 3 Tutorial-->
+
+    <h2>Color Examples in HTML:</h2>
+
+    <!-- Using color names -->
+    <p style="color: red;">This text uses a color name (red)</p>
+    <p style="color: blue;">This text uses a color name (blue)</p>
+
+    <!-- Using RGB values -->
+    <p style="color: rgb(255, 0, 0);">This text uses RGB value (255, 0, 0)</p>
+    <p style="color: rgb(0, 255, 0);">This text uses RGB value (0, 255, 0)</p>
+
+    <!-- Using HEX values -->
+    <p style="color: #bd0202;">This text uses HEX value (#FF0000)</p>
+    <p style="color: #00FF00;">This text uses HEX value (#00FF00)</p>
+
+    <!-- Using HSL values -->
+    <p style="color: hsl(0, 100%, 50%);">This text uses HSL value (0, 100%, 50%)</p>
+    <p style="color: hsl(120, 100%, 50%);">This text uses HSL value (120, 100%, 50%)</p>
+
+    <!-- Background color examples -->
+    <p style="background-color: rgb(92, 237, 121); color: black;">Text with background color</p>
+    <p style="background-color: #e6e6fa; color: navy;">Different background and text colors</p>
+    <!--RBGA-->
+
+    <p style="color: rgba(215, 8, 8, 1);background-color:rgba(215, 8, 8, 0.444)">This text uses RGBA value (255, 0, 0)</p>
+    <p style="color: rgb(0, 255, 0);">This text uses RGB value (0, 255, 0)</p>
+
+
+    <h2>Anchor Examples in HTML:</h2>
+
+    <!-- Basic link examples -->
+    <p><a href="https://www.google.com">Default link (opens in same tab)</a></p>
+
+    <!-- Target attribute examples -->
+    <p><a href="https://www.facebook.com" target="_blank">Opens in new tab (_blank)</a></p>
+    <p><a href="https://www.twitter.com" target="_self">Opens in same tab (_self)</a></p>
+    <p><a href="https://www.linkedin.com" target="_parent">Opens in parent frame (_parent)</a></p>
+    <p><a href="https://www.instagram.com" target="_top">Opens in full body of window (_top)</a></p>
+
+    <!-- Styled links -->
+    <p><a href="https://www.example.com" style="text-decoration: none; color: #ff0000; padding: 5px; border: 1px solid red;">
+        Styled Link
+    </a></p>
+
+    <!-- Special links -->
+    <p><a href="mailto:contact@example.com">Send email</a></p>
+    <p><a href="tel:+1234567890">Call us</a></p>
+
+    <!-- Link with image -->
+    <p>
+        <a href="https://www.example.com" target="_blank">
+            <img src="https://via.placeholder.com/150" alt="Click me" style="border: 2px solid blue;">
+        </a>
+    </p>
+
+    <!-- Local file link -->
+    <p><a href="files/document.pdf" download>Download PDF</a></p>
+
+    <!--Image Tag-->
+    <a href="https://www.udeshatechnology.com"><img src="8.jpg" width="300" height="200" alt="Sample Image"></a>
+    <img src="image/1.jpg" alt="Placeholder Image" style="width: 400px; height: 300px;">
+    <h2>Image Map Example:</h2>
+
+    <!-- Image with map -->
+    <img src="image/3.png" alt="Workplace" usemap="#workmap" width="400" height="379">
+
+    <!-- Define the map -->
+    <map name="workmap">
+        <!-- Rectangular area -->
+        <area shape="rect" coords="34,44,270,350" alt="Computer" href="8.jpg">
+        
+        <!-- Circular area -->
+        <area shape="circle" coords="337,300,44" alt="Coffee" href="image/2.mp4">
+        
+        <!-- Polygonal area -->
+        <area shape="poly" coords="140,121,181,116,204,160,204,222,191,270,140,329,85,271,71,217,72,154,94,117" 
+              alt="Phone" href="image/5.mp4">
+    </map>
+</body>
+
+</html>
