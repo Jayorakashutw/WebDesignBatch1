@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+     <style>
+        .form-group {
+            margin-bottom: 15px;
+        }
+        label {
+            display: inline-block;
+            width: 100px;
+            font-weight: bold;
+        }
+        legend
+        {
+            font-weight: bolder;
+            color:rgb(4, 4, 72);
+            font-size: 16px;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+    </style>
+</head>
+<body>
+    <label for="">Days</label>
+    <select name="daysname" id="d1" size="4" multiple>
+        <option value="1">Sunday</option>
+        <option value="2">Monday</option>
+        <option value="3">Tuesday</option>
+        <option value="4">Wednesday</option>
+        <option value="5">Thursday</option>
+        <option value="6">Friday</option>
+        <option value="7">Saturday</option>
+    </select>
+
+    <hr>
+    <label for="">Address</label>
+    <textarea name="address" id="" cols="60" rows="10" placeholder="Enter Your Address"></textarea>
+    <hr>
+    <button type="button">Save Data</button> <br><br><br>
+    <hr>
+   <form action="">
+     <fieldset>
+        <legend>Local Address Details</legend>
+             <div class="form-group">
+            <label for="address">Address:</label>
+            <textarea name="address" id="address" cols="50" rows="4" placeholder="Enter your street address"></textarea>
+        </div>
+
+        <div class="form-group">
+            <label for="city">City:</label>
+            <input type="text" id="city" name="city" placeholder="Enter your city">
+        </div>
+
+        <div class="form-group">
+            <label for="state">State:</label>
+            <select name="state" id="state">
+                <option value="">Select State</option>
+                <option value="AP">Andhra Pradesh</option>
+                <option value="KA">Karnataka</option>
+                <option value="KL">Kerala</option>
+                <option value="MH">Maharashtra</option>
+                <option value="TN">Tamil Nadu</option>
+                <option value="TS">Telangana</option>
+                <!-- Add more states as needed -->
+            </select>
+        </div>
+
+        <div class="form-group">
+            <label for="pincode">Pincode:</label>
+            <input type="text" id="pincode" name="pincode" pattern="[0-9]{6}" maxlength="6" placeholder="Enter 6-digit pincode">
+        </div>
+        <button type="submit">Submit</button>
+    </fieldset>
+   </form>
+</body>
+</html>

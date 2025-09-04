@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML Optgroup Examples</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+        }
+        .form-group {
+            margin-bottom: 20px;
+        }
+        label {
+            display: block;
+            margin-bottom: 5px;
+            font-weight: bold;
+        }
+        select {
+            width: 200px;
+            padding: 5px;
+        }
+        optgroup {
+            font-style: normal;
+            font-weight: bold;
+            color: #2c3e50;
+        }
+    </style>
+</head>
+<body>
+    <h2>HTML Optgroup Examples</h2>
+
+    <!-- Cars by Manufacturer -->
+    <div class="form-group">
+        <label for="cars">Select a Car:</label>
+        <select id="cars" name="cars">
+            <optgroup label="Toyota">
+                <option value="camry">Camry</option>
+                <option value="corolla">Corolla</option>
+                <option value="fortuner">Fortuner</option>
+            </optgroup>
+            <optgroup label="Honda">
+                <option value="city">City</option>
+                <option value="civic">Civic</option>
+                <option value="accord">Accord</option>
+            </optgroup>
+            <optgroup label="Hyundai">
+                <option value="i20">i20</option>
+                <option value="creta">Creta</option>
+                <option value="verna">Verna</option>
+            </optgroup>
+            <optgroup label="Maruti">
+                <option value="Alto">Alto</option>
+                <option value="Baleno">Baleno</option>
+                <option value="Grand Vitara">Grand Vitara</option>
+            </optgroup>
+        </select>
+    </div>
+
+    <!-- Programming Languages by Type -->
+    <div class="form-group">
+        <label for="programming">Select Programming Language:</label>
+        <select id="programming" name="programming">
+            <optgroup label="Frontend">
+                <option value="html">HTML</option>
+                <option value="css">CSS</option>
+                <option value="javascript">JavaScript</option>
+            </optgroup>
+            <optgroup label="Backend">
+                <option value="python">Python</option>
+                <option value="java">Java</option>
+                <option value="php">PHP</option>
+            </optgroup>
+            <optgroup label="Database">
+                <option value="mysql">MySQL</option>
+                <option value="mongodb">MongoDB</option>
+                <option value="postgresql">PostgreSQL</option>
+            </optgroup>
+        </select>
+    </div>
+
+    <!-- Indian States and Cities -->
+    <div class="form-group">
+        <label for="location">Select Location:</label>
+        <select id="location" name="location">
+            <optgroup label="Maharashtra">
+                <option value="mumbai">Mumbai</option>
+                <option value="pune">Pune</option>
+                <option value="nagpur">Nagpur</option>
+            </optgroup>
+            <optgroup label="Karnataka">
+                <option value="bangalore">Bangalore</option>
+                <option value="mysore">Mysore</option>
+                <option value="hubli">Hubli</option>
+            </optgroup>
+            <optgroup label="Tamil Nadu">
+                <option value="chennai">Chennai</option>
+                <option value="coimbatore">Coimbatore</option>
+                <option value="madurai">Madurai</option>
+            </optgroup>
+        </select>
+    </div>
+</body>
+</html>
