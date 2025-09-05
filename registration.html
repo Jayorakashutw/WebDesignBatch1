@@ -1,0 +1,388 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Course Registration Form</title>
+    <style>
+    body {
+        font-family: Arial, sans-serif;
+        margin: 25px;
+        background-color: #f5f5f5;
+    }
+
+    table {
+        width: 100%;
+        border-collapse: collapse;
+        table-layout: fixed;
+    }
+
+    td {
+        padding: 8px;
+        vertical-align: bottom;
+    }
+
+    td:first-child {
+        width: 30%;
+    }
+
+    td:last-child {
+        width: calc(100% - 30%);
+    }
+
+    fieldset {
+        margin-bottom: 20px;
+        padding: 15px;
+        border: 1px solid #6e31fc;
+        border-radius: 10px;
+        background-color: white;
+    }
+
+    legend {
+        font-weight: bold;
+        color: #eef2f6;
+        padding: 10px;
+        background-color: rgb(183, 6, 6);
+    }
+
+    input[type="text"], 
+    input[type="email"], 
+    input[type="tel"],
+    input[type="date"],
+    input[type="number"],
+    select, 
+    textarea {
+        width: 95%;
+        padding: 8px;
+        border: 1px solid #ddd;
+        border-radius: 4px;
+        box-sizing: border-box;
+        margin: 2px 0;
+    }
+
+    input[type="radio"],
+    input[type="checkbox"] {
+        width: auto;
+        margin-right: 10px;
+    }
+
+    .required:after {
+        content: " *";
+        color: red;
+    }
+
+    input[type="submit"],
+    input[type="reset"] {
+        padding: 10px 20px;
+        margin: 0 10px;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+    }
+
+    input[type="submit"] {
+        background-color: #2c3e50;
+        color: white;
+    }
+
+    input[type="reset"] {
+        background-color: #95a5a6;
+        color: white;
+    }
+
+    input[type="submit"]:hover,
+    input[type="reset"]:hover {
+        opacity: 0.9;
+    }
+
+    select:focus,
+    input:focus,
+    textarea:focus {
+        outline: none;
+        border-color: #3498db;
+        box-shadow: 0 0 5px rgba(52, 152, 219, 0.3);
+    }
+
+    textarea {
+        resize: vertical;
+        min-height: 60px;
+    }
+</style>
+</head>
+<body>
+    <h2>Course Registration Form</h2>
+    <form action="#" method="post" enctype="multipart/form-data">
+        <!-- Personal Information -->
+        <fieldset>
+            <legend>Personal Information</legend>
+            <table>
+                <tr>
+                    <td><label class="required">First Name:</label></td>
+                    <td><input type="text" name="firstname" required value="Jay Prakash" disabled></td>
+                </tr>
+                <tr>
+                    <td><label>Middle Name:</label></td>
+                    <td><input type="text" name="middlename" size="5"></td>
+                </tr>
+                <tr>
+                    <td><label class="required">Last Name:</label></td>
+                    <td><input type="text" name="lastname" required maxlength="4"></td>
+                </tr>
+                <tr>
+                    <td><label class="required">Date of Birth:</label></td>
+                    <td><input type="date" name="dob" required></td>
+                </tr>
+                <tr>
+                    <td><label class="required">Gender:</label></td>
+                    <td>
+                        <input type="radio" name="gender" value="male" required> Male
+                        <input type="radio" name="gender" value="female"> Female
+                        <input type="radio" name="gender" value="other"> Other
+                    </td>
+                </tr>
+                <tr>
+                    <td><label>Parent's Name:</label></td>
+                    <td><input type="text" name="parentname"></td>
+                </tr>
+                <tr>
+                    <td><label class="required">Permanent Address:</label></td>
+                    <td><textarea name="permanent_address" rows="3" required></textarea></td>
+                </tr>
+                <tr>
+                    <td><label>Current Address:</label></td>
+                    <td>
+                        <textarea name="current_address" rows="3"></textarea><br>
+                        <input type="checkbox" name="same_address"> Same as permanent address
+                    </td>
+                </tr>
+                <tr>
+                    <td><label class="required">Primary Contact:</label></td>
+                    <td><input type="tel" name="primary_contact" required></td>
+                </tr>
+                <tr>
+                    <td><label>Alternate Contact:</label></td>
+                    <td><input type="tel" name="alternate_contact"></td>
+                </tr>
+                <tr>
+                    <td><label class="required">Email ID:</label></td>
+                    <td><input type="email" name="email" required></td>
+                </tr>
+                <tr>
+                    <td><label>Aadhaar Number:</label></td>
+                    <td><input type="text" name="aadhaar"></td>
+                </tr>
+                <tr>
+                    <td><label>Photo:</label></td>
+                    <td><input type="file" name="photo" accept="image/*"></td>
+                </tr>
+            </table>
+        </fieldset>
+
+        <!-- Academic Information -->
+        <fieldset>
+            <legend>Academic Information</legend>
+            <table>
+                <tr>
+                    <td><label class="required">Highest Qualification:</label></td>
+                    <td>
+                        <select name="qualification" required>
+                            <option value="">Select Qualification</option>
+                            <option value="10th">10th</option>
+                            <option value="12th">12th</option>
+                            <option value="graduation">Graduation</option>
+                            <option value="post_graduation">Post Graduation</option>
+                            <option value="diploma">Diploma</option>
+                            <option value="other">Other</option>
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td><label class="required">Stream/Specialization:</label></td>
+                    <td>
+                        <select name="stream" required>
+                            <option value="">Select Stream</option>
+                            <option value="science">Science</option>
+                            <option value="commerce">Commerce</option>
+                            <option value="arts">Arts</option>
+                            <option value="it">IT</option>
+                            <option value="management">Management</option>
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td><label class="required">College/School Name:</label></td>
+                    <td><input type="text" name="institution" required></td>
+                </tr>
+                <tr>
+                    <td><label class="required">Passing Year:</label></td>
+                    <td><input type="number" name="passing_year" min="1990" max="2024" required></td>
+                </tr>
+                <tr>
+                    <td><label>Percentage/Grade:</label></td>
+                    <td><input type="text" name="grade"></td>
+                </tr>
+                <tr>
+                    <td><label>Currently Studying?</label></td>
+                    <td>
+                        <input type="radio" name="studying" value="yes"> Yes
+                        <input type="radio" name="studying" value="no"> No
+                    </td>
+                </tr>
+            </table>
+        </fieldset>
+
+        <!-- Course Details -->
+        <fieldset>
+            <legend>Course Details</legend>
+            <table>
+                <tr>
+                    <td><label class="required">Course Interest:</label></td>
+                    <td>
+                        <select name="course" required>
+                            <option value="">Select Course</option>
+                            <option value="digital_marketing">Digital Marketing</option>
+                            <option value="graphic_design">Graphic Designing</option>
+                            <option value="full_stack">Full Stack Development</option>
+                            <option value="testing">Software Testing</option>
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td><label class="required">Mode of Learning:</label></td>
+                    <td>
+                        <input type="radio" name="mode" value="online" required> Online
+                        <input type="radio" name="mode" value="offline"> Offline
+                        <input type="radio" name="mode" value="hybrid"> Hybrid
+                    </td>
+                </tr>
+                <tr>
+                    <td><label class="required">Batch Preference:</label></td>
+                    <td>
+                        <select name="batch" required>
+                            <option value="">Select Batch</option>
+                            <option value="morning">Morning</option>
+                            <option value="afternoon">Afternoon</option>
+                            <option value="evening">Evening</option>
+                            <option value="weekend">Weekend</option>
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td><label>Start Date:</label></td>
+                    <td><input type="date" name="start_date"></td>
+                </tr>
+                <tr>
+                    <td><label>Duration:</label></td>
+                    <td><input type="text" name="duration" readonly></td>
+                </tr>
+            </table>
+        </fieldset>
+
+        <!-- Professional Information -->
+        <fieldset>
+            <legend>Professional Information (Optional)</legend>
+            <table>
+                <tr>
+                    <td><label>Occupation:</label></td>
+                    <td>
+                        <select name="occupation">
+                            <option value="">Select Occupation</option>
+                            <option value="student">Student</option>
+                            <option value="job">Job</option>
+                            <option value="business">Business</option>
+                            <option value="other">Other</option>
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td><label>Company/Organization:</label></td>
+                    <td><input type="text" name="company"></td>
+                </tr>
+                <tr>
+                    <td><label>Work Experience:</label></td>
+                    <td>
+                        <select name="experience">
+                            <option value="">Select Experience</option>
+                            <option value="0-1">0-1 year</option>
+                            <option value="1-3">1-3 years</option>
+                            <option value="3+">3+ years</option>
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td><label>Skills/Tools Known:</label></td>
+                    <td><textarea name="skills" rows="3"></textarea></td>
+                </tr>
+            </table>
+        </fieldset>
+
+        <!-- Emergency Contact -->
+        <fieldset>
+            <legend>Emergency Contact</legend>
+            <table>
+                <tr>
+                    <td><label class="required">Name:</label></td>
+                    <td><input type="text" name="emergency_name" required></td>
+                </tr>
+                <tr>
+                    <td><label class="required">Relationship:</label></td>
+                    <td><input type="text" name="emergency_relation" required></td>
+                </tr>
+                <tr>
+                    <td><label class="required">Contact Number:</label></td>
+                    <td><input type="tel" name="emergency_contact" required></td>
+                </tr>
+            </table>
+        </fieldset>
+
+        <!-- Additional Details -->
+        <fieldset>
+            <legend>Additional Details</legend>
+            <table>
+                <tr>
+                    <td><label>How did you hear about us?</label></td>
+                    <td>
+                        <select name="source">
+                            <option value="">Select Source</option>
+                            <option value="google">Google</option>
+                            <option value="social">Social Media</option>
+                            <option value="friends">Friends</option>
+                            <option value="seminar">Seminar</option>
+                            <option value="other">Other</option>
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td><label>Reason for joining:</label></td>
+                    <td>
+                        <select name="reason">
+                            <option value="">Select Reason</option>
+                            <option value="career">Career Growth</option>
+                            <option value="job">Job Preparation</option>
+                            <option value="interest">Interest</option>
+                            <option value="higher_studies">Higher Studies</option>
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td><label>Placement Assistance Required?</label></td>
+                    <td>
+                        <input type="radio" name="placement" value="yes"> Yes
+                        <input type="radio" name="placement" value="no"> No
+                    </td>
+                </tr>
+                <tr>
+                    <td><label>Special Requirements:</label></td>
+                    <td><textarea name="special_requirements" rows="3"></textarea></td>
+                </tr>
+            </table>
+        </fieldset>
+
+        <!-- Submit Button -->
+        <div style="text-align: center;">
+            <input type="submit" value="Submit Registration">
+            <input type="reset" value="Reset Form">
+        </div>
+    </form>
+</body>
+</html>
