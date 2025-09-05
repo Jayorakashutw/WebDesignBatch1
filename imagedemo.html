@@ -14,7 +14,7 @@
     <label>Password</label> <input type="password" name="password" placeholder="Enter Password" > <br><br>
     <label>Email</label> <input type="email" name="email" placeholder="Enter Email" > <br><br>
     <label>Phone</label> <input type="tel" name="phone" placeholder="Enter Phone Number" > <br><br>
-    <label>Age</label> <input type="number" name="age" placeholder="Enter Age" > <br><br>
+    <label>Age</label> <input type="number" name="age" placeholder="Enter Age" step="2"> <br><br>
     <label>Website</label> <input type="url" name="website" placeholder="Enter Website URL" > <br><br>
     <label>Date of Birth</label> <input type="date" name="dob" id=""> <br><br>
     <label>Upload File</label> <input type="file" name="fileupload" id=""> <br><br>
@@ -22,6 +22,8 @@
     <label for="">Category</label>
     <input type="checkbox"> General <input type="checkbox">  OBC <input type="checkbox"> SC <input type="checkbox"> ST <br><br>Click. 
     <button>Save</button>
+    <label>Pincode</label> <input type="text" name="pincode" pattern="[0-9]{6}" title="Please enter a valid 6-digit pincode" required>
+    image: <input type="image" src="image/11.jpg" alt="Submit" width="50" height="50">
     <input type="submit" value="Submit">
     <input type="reset" value="Reset Value">
   </form>

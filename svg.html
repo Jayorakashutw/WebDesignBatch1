@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SVG Examples</title>
+    <style>
+        .svg-container {
+            margin: 20px;
+            padding: 10px;
+            border: 1px solid #ccc;
+        }
+        svg {
+            background-color: #f0f0f0;
+        }
+    </style>
+</head>
+<body>
+    <h2>SVG Shape Examples</h2>
+
+    <!-- Basic Shapes -->
+    <div class="svg-container">
+        <h3>Basic Shapes</h3>
+        <svg width="400" height="200">
+            <!-- Rectangle -->
+            <rect x="10" y="10" width="80" height="80" 
+                  fill="blue" stroke="black" stroke-width="2"/>
+            
+            <!-- Circle -->
+            <circle cx="150" cy="50" r="40" 
+                    fill="red" stroke="black" stroke-width="2"/>
+            
+            <!-- Ellipse -->
+            <ellipse cx="250" cy="50" rx="60" ry="30" 
+                     fill="green" stroke="black" stroke-width="2"/>
+            
+            <!-- Line -->
+            <line x1="320" y1="10" x2="380" y2="90" 
+                  stroke="purple" stroke-width="4"/>
+            
+            <!-- Polygon -->
+            <polygon points="30,150 85,150 60,110" 
+                     fill="yellow" stroke="black" stroke-width="2"/>
+        </svg>
+    </div>
+
+    <!-- Path Examples -->
+    <div class="svg-container">
+        <h3>Path Examples</h3>
+        <svg width="400" height="200">
+            <!-- Simple path -->
+            <path d="M 10,50 L 90,90 L 90,10 Z" 
+                  fill="orange" stroke="black" stroke-width="2"/>
+            
+            <!-- Curved path -->
+            <path d="M 120,50 Q 170,10 220,50" 
+                  fill="none" stroke="red" stroke-width="3"/>
+            
+            <!-- Complex path -->
+            <path d="M 250,50 C 290,10 310,90 350,50" 
+                  fill="none" stroke="blue" stroke-width="3"/>
+        </svg>
+    </div>
+
+    <!-- Text and Gradients -->
+    <div class="svg-container">
+        <h3>Text and Gradients</h3>
+        <svg width="400" height="200">
+            <!-- Linear gradient -->
+            <defs>
+                <linearGradient id="gradient1" x1="0%" y1="0%" x2="100%" y2="0%">
+                    <stop offset="0%" style="stop-color:rgb(255,0,0);stop-opacity:1"/>
+                    <stop offset="100%" style="stop-color:rgb(0,0,255);stop-opacity:1"/>
+                </linearGradient>
+            </defs>
+            
+            <!-- Rectangle with gradient -->
+            <rect x="10" y="10" width="380" height="80" 
+                  fill="url(#gradient1)" stroke="black" stroke-width="2"/>
+            
+            <!-- Text -->
+            <text x="50" y="150" font-family="Arial" font-size="24" fill="navy">
+                SVG Text Example
+            </text>
+        </svg>
+    </div>
+
+    <!-- Animation -->
+    <div class="svg-container">
+        <h3>Animation</h3>
+        <svg width="400" height="200">
+            <circle cx="50" cy="50" r="30" fill="purple">
+                <animate attributeName="cx" 
+                         values="50;350;50" 
+                         dur="4s" 
+                         repeatCount="indefinite"/>
+                <animate attributeName="fill" 
+                         values="purple;red;blue;purple" 
+                         dur="4s" 
+                         repeatCount="indefinite"/>
+            </circle>
+        </svg>
+    </div>
+</body>
+</html>
